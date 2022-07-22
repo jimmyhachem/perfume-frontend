@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+}
+
+.container{
+    background: #fff;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;                                                                          
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    background: url('./imgs/image-product-desktop.jpg');
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1.9rem;
+}
+
+.perfume{
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.name{
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+}
+
+.desc{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: start;
+}
+
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+
+}
+
+.priv-price{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.purchase-button{
+    display: flex;
+    gap: 10px;
+    background: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.purchase-button:hover{
+    background: hsl(120, 40%, 18%);
+}
+
+.purchase-button p{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+@media (max-width:505px){
+    .container{
+        height: 500px;
+    }
+
+    .content{
+        gap: 5px;
+    }
+}
+
+@media (max-width:460px){
+    .container{
+        flex-direction: column;
+        height: 550px;
+        margin: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .img{
+        background: url(./imgs/image-product-mobile.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 35%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .content{
+        width: 100%;
+        height: 65%;
+        padding: 1rem 1rem 0rem 1rem;
+        gap: 0px;
+    }
+
+    .name{
+        margin-bottom: 1rem;
+    }
+
+    .desc{
+        margin-bottom: 1rem;
+    }
+
+    .prices{
+        margin-bottom: 1rem;
+    }
+}
+
